@@ -7,7 +7,6 @@
 
 [![npm](https://img.shields.io/npm/v/sshcon.svg)](https://www.npmjs.com/package/sshcon)
 [![npm](https://img.shields.io/npm/l/sshcon.svg)](https://github.com/oguzhaninan/sshcon/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/oguzhaninan/sshcon.svg?branch=master)](https://travis-ci.org/oguzhaninan/sshcon)
 [![npm](https://img.shields.io/npm/dt/sshcon.svg)](https://www.npmjs.com/package/sshcon)
 
 
