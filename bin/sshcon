@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+/**
+ * sshcon
+ * 
+ * @author Oğuzhan İNAN <oguzhan3488@gmail.com>
+ */
+
+require('../dist/index.js');

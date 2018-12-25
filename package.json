@@ -1,0 +1,35 @@
+{
+  "name": "sshcon",
+  "version": "1.0.0",
+  "description": "Quick and simple SSH config management tool",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "yarn run build && clear && node dist/index.js",
+    "build": "tsc",
+    "lint": "tslint -c tslint.json src/**/*.ts src/*.ts",
+    "lint:fix": "yarn run lint --fix",
+    "clean": "rm -rf dist/*"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "sshcon": "./bin/sshcon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oguzhaninan/sshcon.git"
+  },
+  "author": {
+    "name": "Oğuzhan İNAN",
+    "email": "oguzhan3488@gmail.com",
+    "url": "https://oguzhaninan.gitlab.io"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk-pipe": "^2.0.0",
+    "enquirer": "^2.2.0",
+    "ssh-config": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.18"
+  }
+}
