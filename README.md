@@ -21,7 +21,7 @@ sudo npm install -g sshcon
 ```
 ### YARN 
 ```bash
-sudo yarn global add sshcon
+yarn global add sshcon
 ```
 
 ## Features
