@@ -40,13 +40,17 @@ export default class SSHCon {
     public async main(): Promise<void> {
         console.log(chalk('green')(`sshcon version ${this.getVersion()}`));
 
-        await this.showMainMenu();
+        this.showMainMenu().then(() => {
+            console.log(chalk('green')(`Successfully updated.`));
+        })
+        .catch(_err => {
+            console.log(chalk('red')('Process canceled.'))
+        });
 
-        console.log(chalk('green')(`Successfully updated.`));
     }
 
     private async showMainMenu(): Promise<void> {
-        const mainMenuAnswer: any = await prompt(Questions.MainMenuQuestion);
+        const mainMenuAnswer: any = await prompt(Questions.MainMenuQuestion)
 
         switch (mainMenuAnswer.selectedMenu) {
             case MainMenu.DeleteHost:
