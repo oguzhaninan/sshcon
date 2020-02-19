@@ -27,9 +27,10 @@
   "dependencies": {
     "chalk-pipe": "^2.0.0",
     "enquirer": "^2.2.0",
-    "ssh-config": "^1.1.5"
+    "ssh-config": "^1.1.5",
+    "typescript": "^3.7.5"
   },
   "devDependencies": {
-    "@types/node": "^10.12.18"
+    "@types/node": "^12.0.12"
   }
 }
